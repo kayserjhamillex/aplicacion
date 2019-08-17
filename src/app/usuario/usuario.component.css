@@ -1,0 +1,52 @@
+ body
+ {
+     background:#F3F4F5;
+}
+#perfil2 {
+    font-family:roboto slab;
+    font-weight:bold;
+    background:#4D656D;
+    padding:5px;
+    width:194px;
+    text-align:center;
+    font-size:20px;
+}
+#perfil1
+{
+    background:#F3F4F5;
+    width:180px;
+    height:330px;
+    padding:5px;
+    position:absolute;
+    top:5px;
+    left:5px;
+    opacity:0;
+    transition:ease 0.8s;
+    overflow:auto;
+}
+#perfil1 a 
+{
+    display:block;
+    font-family:roboto slab;
+    font-size:12px;
+    text-align:left;
+    background:#E1E2E3;
+    padding:3px;
+    margin:2px;
+}
+#perfil1 a label
+{
+    color:#4D656D;
+}
+#perfil:hover #perfil1
+{
+    opacity:1;
+    transition:ease 0.8s;
+}
+#perfil2 a 
+{
+    display:block;
+    font-size:11px;
+    border-top:1px solid #F3F4F5;
+    color:#F3F4F5;
+}
