@@ -9,10 +9,7 @@ const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'iniciado', component: PerfilComponent},
   { path: 'usuario', component: UsuarioComponent}
-
 ];
-
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

@@ -1,54 +1,37 @@
-<body id="myId">
-    <section class="register-account"> 
-          <div class="signform">      
-            <div class="left">
-              <a href="#" style="float:right;margin-right:35px;font-size: 0.9em;" class="bts-a">
-                Don't have an account? Sign up!
-              </a>
-              <div class="bts">
-                <a href="#" class="fblogin social">
-                  <i class="fa fa-facebook">
-                  </i>
-                  <span>
-                    Sign in with Facebook
-                  </span>
-                </a>
-                <a href="#" class="twlogin social">
-                  <i class="fa fa-twitter">
-                  </i>
-                  <span>
-                    Sign in with Twitter
-                  </span>
-                </a>
-                <a class="gplogin social" (click)="accederConGoogle()">
-                  <i class="fa fa-google-plus">
-                  </i>
-                  <span>
-                    Sign in with Google
-                  </span>
-                </a>             
-              </div>
-            </div>
-            <div class="right">
-                <div class="headit">
-                  <h4>
-                    Login To Your Account
-                  </h4>
-                </div>
-                <div class="form">
-                  <form class="login-form" id="login-form">
-                      <input type="text" placeholder="User Name"/>
-                      <input type="password" placeholder="Password"/>        
-                      <input class="subbt" type="submit" value="Sign In" style="border:none;"/>   
-                  </form>
-                  <input type="checkbox" id="remember" name="remember">
-                  <span style="color:#b6b6b6;font-size: 0.9em;">
-                     Remember Me
-                  </span>
-                  <a href="#">
-                    Forgot your password?
-                  </a>        
-                </div>
-            </div>       
-          </div>
-    </section>
+<div *ngIf="!logeado" >
+    Falta Iniciar Sesión
+</div>
+<div class="mitad">
+    <hr>
+    <button (click)="accederConGoogle()" class="btn btn-danger btn-block">
+        <i class="fab fa-google"></i>
+        Iniciar Google
+    </button>
+    <br>
+    <button (click)="accederConFacebook()" class="btn btn-info btn-block">
+            <i class="fab fa-facebook"></i>
+            Iniciar Google
+        </button>
+        <br>
+</div>
+<div class="mitad">
+    <div *ngIf="logeado" >
+            Ya Inicio Sesión
+        <br>
+        <div>
+            <img [src]="usuario.photoUrl" alt="">
+        </div>
+        <br>
+        <div>
+            <h1>
+                {{usuario.name}}
+            </h1>
+            <br>
+            <h3>
+                {{usuario.email}}
+            </h3>
+            
+        </div>
+        <button (click)="Salir()" class="btn btn-primary btn-block">Salir</button>
+    </div>
+</div>
