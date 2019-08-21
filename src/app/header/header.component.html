@@ -1,1 +1,50 @@
-<p>header works!</p>
+<!-- <div class="site-header-wrapper">     -->
+<div class="menu-toggle" id="menu-toggle">
+    <div></div>
+    <div></div>
+    <div></div>
+</div><!-- #menu-toggle -->
+<div class="site-title-wrapper">
+    <a [routerLink]="['']" class="custom-logo-link" rel="home">
+        <img width="176" height="152" src="http://kayserjhamillex.com/wp-content/uploads/2019/07/cropped-logaso-1.png" class="custom-logo" alt="Clinica Jx" />
+    </a>
+</div><!-- .site-title-wrapper -->
+<div class="main-navigation-container">
+    <nav id="site-navigation" class="main-navigation">
+        <div class="menu-primary-menu-container">
+            <ul id="menu-primary-menu" class="menu">
+                <li id="menu-item-170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-156 current_page_item menu-item-170">
+                    <a [routerLink]="['']" aria-current="page">
+                        INICIO
+                    </a>
+                </li>
+                <li id="menu-item-172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-172">
+                    <a [routerLink]="['/nosotros']">
+                        CONOCENOS
+                    </a>
+                </li>
+                <li id="menu-item-169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-169">
+                    <a [routerLink]="['/especialidad']">
+                        ESPECIALIDADES
+                    </a>
+                </li>
+                <li id="menu-item-171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171">
+                    <a [routerLink]="['/contactanos']">
+                        CONTACTANOS
+                    </a>
+                </li>
+                <li id="menu-item-167" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-167">
+                    <a [routerLink]="['/consultas']">
+                        CONSULTAS
+                    </a>
+                </li>
+                <li id="menu-item-380" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-380">
+                    <a [routerLink]="['/cita']">
+                        RESERVAR CITA
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav><!-- #site-navigation -->
+</div>
+<!-- </div>.site-header-wrapper  -->

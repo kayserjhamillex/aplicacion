@@ -12,6 +12,18 @@ import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { UsuarioComponent } from './usuario/usuario.component';
+import { InicioComponent } from './inicio/inicio.component';
+import { IheaderComponent } from './inicio/iheader/iheader.component';
+import { IbodyComponent } from './inicio/ibody/ibody.component';
+import { EspecialidadComponent } from './especialidad/especialidad.component';
+import { EbodyComponent } from './especialidad/ebody/ebody.component';
+import { EheaderComponent } from './especialidad/eheader/eheader.component';
+import { NosotrosComponent } from './nosotros/nosotros.component';
+import { NheaderComponent } from './nosotros/nheader/nheader.component';
+import { NbodyComponent } from './nosotros/nbody/nbody.component';
+import { ContactanosComponent } from './contactanos/contactanos.component';
+import { CheaderComponent } from './contactanos/cheader/cheader.component';
+import { CbodyComponent } from './contactanos/cbody/cbody.component';
 
 
 const config = new AuthServiceConfig([
@@ -40,7 +52,19 @@ const config = new AuthServiceConfig([
     HeaderComponent,
     LoginComponent,
     PerfilComponent,
-    UsuarioComponent
+    UsuarioComponent,
+    InicioComponent,
+    IheaderComponent,
+    IbodyComponent,
+    EspecialidadComponent,
+    EbodyComponent,
+    EheaderComponent,
+    NosotrosComponent,
+    NheaderComponent,
+    NbodyComponent,
+    ContactanosComponent,
+    CheaderComponent,
+    CbodyComponent
   ],
   imports: [
     BrowserModule,

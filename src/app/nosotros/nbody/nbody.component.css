@@ -1,0 +1,26 @@
+h1,h2,h3,h4,h5,h6,p,a
+{
+    text-align: center;
+}
+.proposito
+{
+    width: 100%;
+}
+.imgproposito
+{
+    width: 100%;
+    /* border-radius: 100%; */
+}
+.separador
+{
+    padding: 1em;
+}
+.separadorcito
+{
+    padding: 1em;
+}
+.imgadministradores
+{
+    border-radius: 100%;
+    width: 100%;
+}

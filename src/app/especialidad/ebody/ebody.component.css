@@ -1,0 +1,54 @@
+h1,h2,h3,h4,h5,h6,p,a
+{
+    text-align: center;
+}
+.marco
+{
+    /* border: solid 1px black; */
+}
+.imgespecialidad, .imgdoctor
+{
+    width: 100%;
+    border-radius: 100%;
+}
+.docto
+{
+width: 40%;
+margin: auto;
+float: left;
+}
+.imgdoctor
+{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+.nombre
+{
+    width: 60%;
+    margin: auto;
+    float: left;
+    text-align: center;
+}
+.encargado
+{
+    margin: auto;
+}
+.servicios
+{
+    padding: 1em;
+}
+.servicio
+{
+    margin: auto;
+    width: 100%;
+}
+.imgservicio
+{
+    width: 100%;
+}
+.separador
+{
+    /* border: 2px solid black; */
+    /* : 2px solid black; */
+}
