@@ -43,6 +43,17 @@
                         RESERVAR CITA
                     </a>
                 </li>
+                <li id="menu-item-380" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-380" *ngIf="!usuario">
+                    <a [routerLink]="['/login']">
+                        Iniciar Seción
+                    </a>
+                </li>
+
+                <li id="menu-item-380" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-380" *ngIf="usuario">
+                    <a [routerLink]="['/login']">
+                        {{usuario.name}}
+                    </a>
+                </li>
             </ul>
         </div>
     </nav><!-- #site-navigation -->
