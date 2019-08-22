@@ -10,10 +10,10 @@ import { ContactanosComponent } from './contactanos/contactanos.component';
 
 
 const routes: Routes = [
-  { path: '', component: LoginComponent },
+  { path: '', component: InicioComponent },
   { path: 'iniciado', component: PerfilComponent},
   { path: 'usuario', component: UsuarioComponent},
-  { path: 'inicio', component: InicioComponent},
+  { path: 'login', component: LoginComponent},
   { path: 'nosotros', component: NosotrosComponent},
   { path: 'especilidad', component: EspecialidadComponent},
   { path: 'contactanos', component: ContactanosComponent},
