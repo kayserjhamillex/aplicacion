@@ -24,6 +24,8 @@ import { NbodyComponent } from './nosotros/nbody/nbody.component';
 import { ContactanosComponent } from './contactanos/contactanos.component';
 import { CheaderComponent } from './contactanos/cheader/cheader.component';
 import { CbodyComponent } from './contactanos/cbody/cbody.component';
+import { LheaderComponent } from './login/lheader/lheader.component';
+import { LbodyComponent } from './login/lbody/lbody.component';
 
 
 const config = new AuthServiceConfig([
@@ -64,7 +66,9 @@ const config = new AuthServiceConfig([
     NbodyComponent,
     ContactanosComponent,
     CheaderComponent,
-    CbodyComponent
+    CbodyComponent,
+    LheaderComponent,
+    LbodyComponent
   ],
   imports: [
     BrowserModule,

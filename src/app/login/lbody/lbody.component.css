@@ -1,0 +1,11 @@
+img
+{
+    width: 200px;
+    height: 200px;
+}
+.mitad
+{
+    width: 50%;
+    margin: auto;
+    float: left;
+}
