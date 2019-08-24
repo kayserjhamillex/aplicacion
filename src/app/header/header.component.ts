@@ -6,8 +6,8 @@ import { AuthService,SocialUser } from "angularx-social-login";
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  private usuario: SocialUser;
-  private loggeIn:boolean;
+  public usuario: SocialUser;
+  public loggeIn:boolean;
   constructor(private authService: AuthService) { }
 
   ngOnInit() {

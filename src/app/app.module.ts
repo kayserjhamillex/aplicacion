@@ -26,6 +26,7 @@ import { CheaderComponent } from './contactanos/cheader/cheader.component';
 import { CbodyComponent } from './contactanos/cbody/cbody.component';
 import { LheaderComponent } from './login/lheader/lheader.component';
 import { LbodyComponent } from './login/lbody/lbody.component';
+// import { AuthGuardService } from './services/auth-guard.service';
 
 
 const config = new AuthServiceConfig([
@@ -50,6 +51,7 @@ const config = new AuthServiceConfig([
 @NgModule({
   declarations: [
     AppComponent,
+    // AuthGuardService,
     FooterComponent,
     HeaderComponent,
     LoginComponent,
