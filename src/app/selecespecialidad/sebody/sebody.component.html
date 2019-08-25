@@ -1,0 +1,53 @@
+<section class="formWrapper">
+    <h2 id="shopByVTitle">
+        Seleccione Especialidad
+    </h2>
+    <p id="backText">
+        Atras
+    </p>
+    <div class="clear">
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <select (change)="capturar()" class="visible"  (ngModel)="opcionSeleccionado">
+                <!-- <option value="value0">-Seleccione Especialidad-</option> -->
+                <option *ngFor="let dato of especialidad">
+                    {{dato}}
+                </option>
+                <!-- <option value="value1">-Seleccione Especialidad-</option>
+                <option value="value2">Medicina General</option>
+                <option value="value3">Neumología</option>
+                <option value="value4">Cardiología</option>
+                <option value="value5">Geriatría</option>
+                <option value="value6">Ginecología</option>
+                <option value="value7">Reumatología</option>
+                <option value="value8">Medicina Interna</option>
+                <option value="value9">Endocrinología</option>
+                <option value="value10">Traumatología</option>
+                <option value="value11">Oftalmología</option>
+                <option value="value12">Otorrinolaringología</option>
+                <option value="value13">Cirugia General</option>
+                <option value="value14">Gastroenterología</option>
+                <option value="value15">Urologia</option>
+                <option value="value16">Neurología</option>
+                <option value="value17">Dermatología</option> -->
+            </select>
+        </div>
+    </div>
+    <div class="col-12">
+        <h3>Seleccione Doctor a Cargo</h3>
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <select name="combo0" id="combo_0" class="visible">
+                <option value="value0">-Seleccione Doctor-</option>
+                <option *ngFor="let dataso of Neumologia">
+                    {{dataso}}
+                </option>
+            </select>
+        </div>
+        <div class="inputbtn col-2">
+            <input routerLink='/datetime' type="button" name="Select" value="GO" onclick="go()" />
+        </div>
+    </div>
+</section>

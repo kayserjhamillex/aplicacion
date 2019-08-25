@@ -26,6 +26,18 @@ import { CheaderComponent } from './contactanos/cheader/cheader.component';
 import { CbodyComponent } from './contactanos/cbody/cbody.component';
 import { LheaderComponent } from './login/lheader/lheader.component';
 import { LbodyComponent } from './login/lbody/lbody.component';
+import { SelecespecialidadComponent } from './selecespecialidad/selecespecialidad.component';
+import { SeheaderComponent } from './selecespecialidad/seheader/seheader.component';
+import { SebodyComponent } from './selecespecialidad/sebody/sebody.component';
+import { SelececdatetimeComponent } from './selececdatetime/selececdatetime.component';
+import { SdheaderComponent } from './selececdatetime/sdheader/sdheader.component';
+import { SdbodyComponent } from './selececdatetime/sdbody/sdbody.component';
+import { PagoComponent } from './pago/pago.component';
+import { PheaderComponent } from './pago/pheader/pheader.component';
+import { PbodyComponent } from './pago/pbody/pbody.component';
+import { BoletaComponent } from './boleta/boleta.component';
+import { BheaderComponent } from './boleta/bheader/bheader.component';
+import { BbodyComponent } from './boleta/bbody/bbody.component';
 // import { AuthGuardService } from './services/auth-guard.service';
 
 
@@ -80,7 +92,19 @@ const config = new AuthServiceConfig([
     CheaderComponent,
     CbodyComponent,
     LheaderComponent,
-    LbodyComponent
+    LbodyComponent,
+    SelecespecialidadComponent,
+    SeheaderComponent,
+    SebodyComponent,
+    SelececdatetimeComponent,
+    SdheaderComponent,
+    SdbodyComponent,
+    PagoComponent,
+    PheaderComponent,
+    PbodyComponent,
+    BoletaComponent,
+    BheaderComponent,
+    BbodyComponent
   ],
   imports: [
     BrowserModule,
