@@ -11,6 +11,9 @@ import { SelecespecialidadComponent } from './selecespecialidad/selecespecialida
 import { SelececdatetimeComponent } from './selececdatetime/selececdatetime.component';
 import { PagoComponent } from './pago/pago.component';
 import { BoletaComponent } from './boleta/boleta.component';
+import { ReservaPaso1Component } from './reserva-paso1/reserva-paso1.component';
+import { ReservaPaso2Component } from './reserva-paso2/reserva-paso2.component';
+import { ReservaPaso3Component } from './reserva-paso3/reserva-paso3.component';
 
 
 const routes: Routes = [
@@ -24,7 +27,12 @@ const routes: Routes = [
   { path: 'datetime', component: SelececdatetimeComponent},
   { path: 'pago', component: PagoComponent},
   { path: 'boleta', component: BoletaComponent},
-//implementado guard
+  { path: 'reserva/paso1', component: ReservaPaso1Component},
+  { path: 'reserva/paso2/:fecha/:tipoId', component: ReservaPaso2Component},
+  { path: 'reserva/paso3/:espe/:fecha', component: ReservaPaso3Component}
+
+
+  //implementado guard
 // { path: 'usuario', component: UsuarioComponent,canActivate:[AuthGuardService]},  
 ];
 @NgModule({

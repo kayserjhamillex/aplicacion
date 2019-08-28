@@ -38,6 +38,11 @@ import { PbodyComponent } from './pago/pbody/pbody.component';
 import { BoletaComponent } from './boleta/boleta.component';
 import { BheaderComponent } from './boleta/bheader/bheader.component';
 import { BbodyComponent } from './boleta/bbody/bbody.component';
+import { ReservaPaso1Component } from './reserva-paso1/reserva-paso1.component';
+import { ReservaPaso2Component } from './reserva-paso2/reserva-paso2.component';
+import { ReservaPaso3Component } from './reserva-paso3/reserva-paso3.component';
+import { HeaderReservaComponent } from './header-reserva/header-reserva.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // import { AuthGuardService } from './services/auth-guard.service';
 
 
@@ -104,12 +109,18 @@ const config = new AuthServiceConfig([
     PbodyComponent,
     BoletaComponent,
     BheaderComponent,
-    BbodyComponent
+    BbodyComponent,
+    ReservaPaso1Component,
+    ReservaPaso2Component,
+    ReservaPaso3Component,
+    HeaderReservaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-     SocialLoginModule
+     SocialLoginModule,
+     FormsModule,
+     ReactiveFormsModule
   ],
   providers: [
     {

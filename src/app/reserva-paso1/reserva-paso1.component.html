@@ -1,0 +1,46 @@
+<app-seheader></app-seheader>
+<h2>
+    Reserva tu Cita
+</h2>
+<div>
+    <form [formGroup]="reservaForm" (ngSubmit)="buscarDoctorDisponible(reservaForm.value)">
+        <div>
+            <label for="tipo">
+                Especialidades
+            </label>
+            <br>
+            <br>
+            <select formControlName="tipo" id="">
+                <option *ngFor="let tipo of Especialidad" [value]="tipo.id">
+                    {{tipo.name}} ===> {{tipo.cost}}
+                </option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="fecha">
+                ¿Que dia sera tu cita?
+            </label>
+            <br>
+            <input type="date" formControlName="dia">
+        </div>
+        <div>
+            <button type="submit">
+                Buscar Doctor
+            </button>
+        </div>
+        <!-- <div>
+            <label for="especialista">
+                Doctor a Cargo
+            </label>
+            <br>
+            <br>
+            <select name="especialista" id="">
+                <option *ngFor="let especialista of Doctor" [value]="especialista.id">
+                    {{especialista.name}}
+                </option>
+            </select>
+        </div> -->
+    </form>
+</div>

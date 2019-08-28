@@ -1,0 +1,9 @@
+<app-seheader></app-seheader>
+<p>reserva-paso2 works!</p>
+<div *ngFor="let doctor of horadisponible">
+    <H3>Doctor(a): {{doctor.name}}</H3>
+    <p>hora de atención de: 2:00 pm a 9:00 pm</p>
+<!-- {{doctor | json}}  -->
+    <button type="submit" (click)="checkout(doctor)">Reservar Cita</button>
+</div>
+ 

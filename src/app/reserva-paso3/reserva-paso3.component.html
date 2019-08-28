@@ -1,0 +1,33 @@
+<app-seheader></app-seheader>
+<p>Checkout</p>
+<h3>doctor(a) : {{doctor.name}}</h3>
+<p>hora de atención de: 2:00 pm a 9:00 pm</p>
+<div *ngIf="!pago">
+    <div>
+        <label for="">Nro Tarjeta</label>
+        <br>
+        <input type="text" name="" id="">
+    </div>
+    <div>
+        <label for="">Fecha de Exp</label>
+        <br>
+        <input type="text" name="" id="">
+    </div>
+    <div>
+        <label for="">CVV</label>
+        <br>
+        <input type="text" name="" id="">
+    </div>
+    <div>
+        <button type="submit" (click)="pagar()">
+            Proceder con el Pago
+        </button>
+    </div>
+</div>
+<div *ngIf="pago">
+    <h3>Gracias por su preferencia</h3>
+    <p>Su numero de operacion es #1235235</p>
+    <small>
+        *debe llegar 10 minutos antes
+    </small>
+</div>
