@@ -1,6 +1,7 @@
 <app-seheader></app-seheader>
 <p>Checkout</p>
-<h3>doctor(a) : {{doctor.name}}</h3>
+<!-- <h3>doctor(a) : {{doctor.name}}</h3> -->
+<h3>Doctor(a): ===> {{doctor.name}}</h3>
 <p>hora de atención de: 2:00 pm a 9:00 pm</p>
 <div *ngIf="!pago">
     <div>
@@ -28,6 +29,6 @@
     <h3>Gracias por su preferencia</h3>
     <p>Su numero de operacion es #1235235</p>
     <small>
-        *debe llegar 10 minutos antes
+        *debe llegar 10 minutos antes para hacer el checkout
     </small>
 </div>

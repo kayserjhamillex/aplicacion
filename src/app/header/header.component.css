@@ -29,9 +29,17 @@ img.emoji {
 {
     color:#919191;
 }
+.hero .widget h2,
+.widget-title
+{
+    color: #00dde5;
+}
+h2
+{
+    color: #00dde5;
+}
 .hero,
 .hero .widget h1,
-.hero .widget h2,
 .hero .widget h3,
 .hero .widget h4,
 .hero .widget h5,
@@ -51,7 +59,7 @@ img.emoji {
 .hero .widget .widget-title,
 .hero .page-header h1
 {
-    color:#020000;
+    color:#000000;
 }
 .main-navigation ul li a,
 .main-navigation ul li a:visited,
@@ -59,7 +67,7 @@ img.emoji {
 .main-navigation ul li a:focus,
 .main-navigation ul li a:visited:hover
 {
-    color:#ffffff;
+    color:#000000;
 }
 .main-navigation .sub-menu .menu-item-has-children > a::after
 {
@@ -356,13 +364,6 @@ body
 .site-header
 {
     background-color:#000000;
-}
-.site-header
-{
-    -webkit-box-shadow:inset 0 0 0 9999em;
-    -moz-box-shadow:inset 0 0 0 9999em;
-    box-shadow:inset 0 0 0 9999em;
-    color:rgba(0, 0, 0, 0.32);
 }
 .main-navigation-container,
 .main-navigation.open,

@@ -3,8 +3,12 @@ import { NgModule } from '@angular/core';
 //para login}
 import {  SocialLoginModule, AuthServiceConfig } from "angularx-social-login";
 import { GoogleLoginProvider,FacebookLoginProvider } from "angularx-social-login";
-//lo demas
+//firebase
+import {AngularFireModule} from "@angular/fire";
+import {AngularFirestoreModule} from "@angular/fire/firestore";
 
+
+//lo demas
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
@@ -43,6 +47,10 @@ import { ReservaPaso2Component } from './reserva-paso2/reserva-paso2.component';
 import { ReservaPaso3Component } from './reserva-paso3/reserva-paso3.component';
 import { HeaderReservaComponent } from './header-reserva/header-reserva.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { environment } from 'src/environments/environment';
+import { HospitalService } from './shared/hospital.service';
+// al usar hospitalservice se borra en contenido de las cosas jejee ;D
+// import { HospitalService } from './shared/hospital.service';
 // import { AuthGuardService } from './services/auth-guard.service';
 
 
@@ -120,13 +128,20 @@ const config = new AuthServiceConfig([
     AppRoutingModule,
      SocialLoginModule,
      FormsModule,
-     ReactiveFormsModule
+     ReactiveFormsModule,
+     AngularFireModule.initializeApp(environment.firebaseConfig),
+         //  AngularFireModule.initializeapp(environment.firebaseConfig),
+     AngularFirestoreModule,
   ],
   providers: [
     {
+      // provide: HospitalService,
+      // provide: AuthServiceConfig,
       provide: AuthServiceConfig,
-      useFactory: provideConfig
-    }
+      useFactory: provideConfig,
+    },
+    HospitalService,
+
   ],
   bootstrap: [AppComponent]
 })

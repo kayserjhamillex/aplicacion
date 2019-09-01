@@ -18,6 +18,7 @@ export class ReservaPaso1Component implements OnInit {
     private clinicaService: ClinicaService,
     //importacion de formulario angular
     private formBuilder: FormBuilder,
+    //importacion para ruteo
     private ruoter: Router,
     ) { }
 
@@ -40,8 +41,5 @@ export class ReservaPaso1Component implements OnInit {
       fecha.getTime(),
       datos.tipo
     ]);
-}
-
-
-
+  }
 }

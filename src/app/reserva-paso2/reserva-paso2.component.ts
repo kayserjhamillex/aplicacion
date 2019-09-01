@@ -11,10 +11,10 @@ import { ClinicaService } from '../clinica.service';
 })
 export class ReservaPaso2Component implements OnInit {
  reserva: any[];
-dia;
-tipo;
-fechaCita;
-horadisponible: any[];
+  dia;
+  tipo;
+  fechaCita;
+  doctordisponible: any[];
   constructor(
     private route: ActivatedRoute,
     private clinicaService :ClinicaService,
@@ -29,10 +29,10 @@ horadisponible: any[];
     // this.horacita=new TIMEOUT(+hora)
     this.reserva = this.clinicaService.ObtenerCita();
     this.BuscarDoctor();
-    console.log()
+    // console.log()
   }
   BuscarDoctor(){
-    let dianodisponible = [];
+    let dianodisponible = []
     console.log(this.fechaCita);
     const fechaIniciobusqueda = this.fechaCita;
     const fechaFinalbusqueda = this.addDays(fechaIniciobusqueda,1);
@@ -63,14 +63,14 @@ horadisponible: any[];
     }
   }
   console.log(disponibles);
-  this.horadisponible = disponibles;
+  this.doctordisponible = disponibles;
 }
 
-checkout(doctor: any) {
+checkout(medico: any) {
   this.router.navigate([
     'reserva',
     'paso3',
-    doctor.id,
+    medico.id,
     this.fechaCita.getTime()
   ])
 }

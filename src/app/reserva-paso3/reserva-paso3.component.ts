@@ -8,7 +8,7 @@ import { ClinicaService } from '../clinica.service';
   styleUrls: ['./reserva-paso3.component.css']
 })
 export class ReservaPaso3Component implements OnInit {
-  especialistaen;
+  espenumber:number;
   doctor;
   pago = false;
   fechaCita;
@@ -17,11 +17,14 @@ export class ReservaPaso3Component implements OnInit {
     private clinicaService :ClinicaService,) { }
 
   ngOnInit() {
-    this.especialistaen = this.route.snapshot.params['espe'];
+    this.espenumber = this.route.snapshot.params['espe'];
     this.fechaCita = this.route.snapshot.params['fecha'];
+    // console.log(this.especialistaen);
+    // console.log(this.fechaCita);
     let especialista = this.clinicaService.ObtenerDoctor();
+    console.log(especialista);
     for (const docto of especialista) {
-      if (docto.id === this.especialistaen) {
+      if (docto.id == this.espenumber) {
         this.doctor = docto;
       }
     }
