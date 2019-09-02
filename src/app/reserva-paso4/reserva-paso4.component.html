@@ -1,0 +1,48 @@
+<div>
+    <form [formGroup]="DatosForm" (ngSubmit)="datospaciente(DatosForm.value)">
+        <div>
+            <input type="submit" value="es extrangero?" (click)="esestrangero()">
+            <input type="submit" value="no soy extrangero" (click)="noestrangero()">
+        </div>
+        <div *ngIf="!extrangero">
+            <label for="dni">
+                DNI
+            </label>
+            <br>
+            <input type="text" name="DNI" formControlName="DNI">
+        </div>
+        <div *ngIf="extrangero">
+            <label for="extrangero">
+                Carnet de Extrangeria
+            </label>
+            <br>
+            <input type="text" name="Extrangeria" formControlName="Extrangeria">
+        </div>
+        <div>
+            <label for="fullname">
+                Nombre Completo: 
+            </label>
+            <br>
+            <input type="text" name="fullname" formControlName="FullName">
+            <br>
+            <span class="rojo" *ngIf="FullName.invalid && FullName.errors.required">
+                *nombre es requerido
+            </span>
+        </div>
+        <div>
+            <label for="nacimiento">
+                Fecha de Nacimiento
+            </label>
+            <br>
+            <input type="date" name="nacimiento" formControlName="FNacimiento">
+            <br>
+            <span class="rojo" *ngIf="FNacimiento.invalid && FNacimiento.errors.required">
+                *fecha de nacimiento requerido
+            </span>
+        </div>
+        <div class="boton">
+            <input type="submit" value="Guardar">
+        </div>
+        
+    </form>
+</div>

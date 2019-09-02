@@ -14,6 +14,9 @@ import { BoletaComponent } from './boleta/boleta.component';
 import { ReservaPaso1Component } from './reserva-paso1/reserva-paso1.component';
 import { ReservaPaso2Component } from './reserva-paso2/reserva-paso2.component';
 import { ReservaPaso3Component } from './reserva-paso3/reserva-paso3.component';
+import { ReservaPaso4Component } from './reserva-paso4/reserva-paso4.component';
+import { ReservaPaso5Component } from './reserva-paso5/reserva-paso5.component';
+import { ReservaPaso6Component } from './reserva-paso6/reserva-paso6.component';
 
 
 const routes: Routes = [
@@ -29,9 +32,10 @@ const routes: Routes = [
   { path: 'boleta', component: BoletaComponent},
   { path: 'reserva/paso1', component: ReservaPaso1Component},
   { path: 'reserva/paso2/:fecha/:tipoId', component: ReservaPaso2Component},
-  { path: 'reserva/paso3/:espe/:fecha', component: ReservaPaso3Component}
-
-
+  { path: 'reserva/paso3/:espe/:fecha', component: ReservaPaso3Component},
+  { path: 'reserva/paso4', component: ReservaPaso4Component},
+  { path: 'reserva/paso5', component: ReservaPaso5Component},
+  { path: 'reserva/paso6', component: ReservaPaso6Component},
   //implementado guard
 // { path: 'usuario', component: UsuarioComponent,canActivate:[AuthGuardService]},  
 ];

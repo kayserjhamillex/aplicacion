@@ -49,6 +49,9 @@ import { HeaderReservaComponent } from './header-reserva/header-reserva.componen
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { environment } from 'src/environments/environment';
 import { HospitalService } from './shared/hospital.service';
+import { ReservaPaso4Component } from './reserva-paso4/reserva-paso4.component';
+import { ReservaPaso5Component } from './reserva-paso5/reserva-paso5.component';
+import { ReservaPaso6Component } from './reserva-paso6/reserva-paso6.component';
 // al usar hospitalservice se borra en contenido de las cosas jejee ;D
 // import { HospitalService } from './shared/hospital.service';
 // import { AuthGuardService } from './services/auth-guard.service';
@@ -121,7 +124,11 @@ const config = new AuthServiceConfig([
     ReservaPaso1Component,
     ReservaPaso2Component,
     ReservaPaso3Component,
-    HeaderReservaComponent
+    HeaderReservaComponent,
+    ReservaPaso4Component,
+    ReservaPaso5Component,
+    ReservaPaso6Component
+    
   ],
   imports: [
     BrowserModule,
